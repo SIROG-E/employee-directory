@@ -7,7 +7,7 @@ import DataAreaContext from '../../utils/DataAreaContext';
 const DataArea = () => {
     const [developerState, setDeveloperState] = useState({
         users: [],
-        order: "descend",
+        order: "ascend",
         filteredUsers: [],
         headings: [
             { name: "Image", width: "10%", order: "descend" },
@@ -24,10 +24,10 @@ const DataArea = () => {
             .map(elem => elem.order)
             .toString();
 
-        if (currentOrder === "descend") {
-            currentOrder = "ascend";
-        } else {
+        if (currentOrder === "ascend") {
             currentOrder = "descend";
+        } else {
+            currentOrder = "ascend";
         }
 
         const compareFnc = (a, b) => {

@@ -1,12 +1,11 @@
 .header {
-    padding: 50px 0;
-    color: #ffffff;
-    background-color: #121e44;
-    width: 100%;
-    text-align: center;
-    border-bottom: 8px solid darkred;
-    margin-bottom: 10px;
-    margin-top: -30px;
-    font-family: Reem Kufi;
+  padding: 50px 0;
+  color: #ffffff;
+  background-color: #121e44;
+  width: 100%;
+  text-align: center;
+  border-bottom: 8px solid darkred;
+  margin-bottom: 10px;
+  margin-top: -30px;
+  font-family: Reem Kufi;
 }
-

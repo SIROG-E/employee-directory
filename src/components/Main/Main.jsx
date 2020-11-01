@@ -4,7 +4,7 @@ import DataArea from '../DataArea/DataArea'
 const Main = () => {
     return (
         <div>
-           <DataArea /> 
+            <DataArea />
         </div>
     );
 };
