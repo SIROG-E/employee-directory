@@ -1,6 +1,6 @@
 import React from 'react';
-import SearchName from "../SearchName/SearchName"
-import "./Navbar.css";
+import SearchName from '../SearchName/SearchName';
+import './Navbar.css';
 
 const Navbar = () => {
     return (
