@@ -1,70 +1,67 @@
-# Getting Started with Create React App
+# Unit 19 React Employee Directory
+<hr> 
+<br> 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![GitHub license](https://img.shields.io/badge/Made%20by-SIROG--E-ab8c9b?style=flat&logo=github)](http://https://github.com/SIROG-E)  
+  
+## Description
+This Employee Directory App was created with React. It allows the user to sort the table by name, phone number, email and dob (date of birth). It also allows user to search for a specific employee.
 
-## Available Scripts
 
-In the project directory, you can run:
+## Table of Contents
+* [Description](#description)
+* [Installation](#installation)
+* [Usage](#usage)
+* [Preview](#preview)
+* [Website](#website)
+* [License](#license)
+* [Contributing](#contributing)
+* [Test](#tests)
+* [Questions](#questions)
+  
+## Installation
 
-### `npm start`
+```
+No installation is needed to use this app. 
+  ```
+`Simply click on ` [here](https://sirog-e.github.io/employee-directory/)  ` to start using the app.`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+For Developers: After cloning this repo, make sure you run `npm i` to install all dependencies and then `npm start` to view the app on your local port. 
+ 
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Usage
+When using this app the user will be able to view an entire employee directory at once so that the user can have quick access to their information.
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Preview
+![Employee Directory Preview](src/utils/images/Employee_Directory_Preview.png)
 
-### `npm run build`
+![Employee Directory Walkthrough](src/utils/images/Employee_Directory_Walkthrough.gif)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Website
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+[Employee Directory - GitHub Pages](https://sirog-e.github.io/employee-directory/) 
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## License
+This project is licensed by:\
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) 
 
-### `npm run eject`
+## Contributing
+![GitHub license](https://img.shields.io/badge/Made%20by-SIROG--E-ab8c9b?style=flat&logo=github)\
+[SIROG-E](https://github.com/SIROG-E)
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## Test
+![](https://img.shields.io/badge/Test-100%25-success?style=flat&logo=node.js) 
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Questions
+If you have any questions, contact SIROG-E at goris.evelyn@gmail.com
+  
+## Repository
+- [GitHub Repo Link](https://github.com/SIROG-E/employee-directory)
+  
+## GitHub
+![Image of me](https://avatars2.githubusercontent.com/u/70104520?s=150&u=8e74301d42e60aae2307f5628e80c8f9cf9f8263&v=4)
+- Evelyn Goris
+- [GitHub Profile](https://github.com/SIROG-E)
+- goris.evelyn@gmail.com
