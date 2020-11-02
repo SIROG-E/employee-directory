@@ -1,6 +1,7 @@
 import React, { useContext } from 'react';
 import DataBody from "../DataBody/DataBody";
 import DataAreaContext from "../../utils/DataAreaContext";
+import '../DataTable/DataTable.css'
 
 const DataTable = () => {
     const context = useContext(DataAreaContext);
@@ -30,7 +31,6 @@ const DataTable = () => {
                 </thead>
                 <DataBody />
             </table>
-
         </div>
     );
 };

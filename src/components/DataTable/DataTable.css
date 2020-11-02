@@ -1,15 +1,19 @@
+
 .datatable .col {
   cursor: pointer;
+  font-family: 'Alegreya Sans SC', sans-serif;
+  font-size: 25px;
+  text-align: center;
 }
 
 .datatable .col .pointer:after {
-  font-size: 80%;
+  font-size: 90%;
   content: "";
-  margin-right: 18px;
+  margin-right: 20px;
 }
 
 .datatable .col .pointer:hover:after {
-  font-size: 80%;
-  content: "🔻";
-  margin-right: 0;
+  font-size: 90%;
+  content: "⬇";
+  margin-right: 10px;
 }

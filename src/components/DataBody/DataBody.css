@@ -1,3 +1,9 @@
-.namecell {
+.name-cell {
   text-transform: capitalize;
+}
+
+img {
+  width: 90px;
+  border-radius: 50%;
+  box-shadow: #302e2e 0.2em 0.2em 0.4em;
 }

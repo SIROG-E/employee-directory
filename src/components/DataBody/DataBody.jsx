@@ -1,11 +1,12 @@
 import React, { useContext } from 'react';
+import "../DataBody/DataBody.css"
 import DataAreaContext from '../../utils/DataAreaContext';
 
 
 const DataBody = () => {
   const context = useContext(DataAreaContext);
 
-  function formatDate(date) {
+  function formatDateDOB(date) {
     const dateArray = date.split("-");
     const year = dateArray[0];
     const month = dateArray[1];
@@ -31,7 +32,9 @@ const DataBody = () => {
                 {name.first} {name.last}
               </td>
               <td data-th="Phone" className="align-middle">
-                {phone}
+                <a href={"tel:" + phone}>
+                  {phone}
+                </a>
               </td>
               <td data-th="Email" className="align-middle">
                 <a href={"mailto:" + email} target="__blank">
@@ -39,7 +42,7 @@ const DataBody = () => {
                 </a>
               </td>
               <td data-th="DOB" className="align-middle">
-                {formatDate(dob.date)}
+                {formatDateDOB(dob.date)}
               </td>
             </tr>
           );

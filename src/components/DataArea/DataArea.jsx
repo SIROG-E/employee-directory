@@ -3,18 +3,19 @@ import DataTable from '../DataTable/DataTable';
 import Navbar from '../Navbar/Navbar';
 import API from '../../utils/API';
 import DataAreaContext from '../../utils/DataAreaContext';
+import '../DataArea/DataArea.css'
 
 const DataArea = () => {
     const [developerState, setDeveloperState] = useState({
         users: [],
-        order: "ascend",
+        order: "descend",
         filteredUsers: [],
         headings: [
-            { name: "Image", width: "10%", order: "descend" },
-            { name: "Name", width: "10%", order: "descend" },
-            { name: "Phone", width: "10%", order: "descend" },
-            { name: "Email", width: "10%", order: "descend" },
-            { name: "DOB", width: "10%", order: "descend" }
+            { name: "image", width: "10%", order: "descend" },
+            { name: "name", width: "15%", order: "descend" },
+            { name: "phone", width: "15%", order: "descend" },
+            { name: "email", width: "10%", order: "descend" },
+            { name: "dob", width: "8%", order: "descend" }
         ]
     });
 
@@ -24,21 +25,21 @@ const DataArea = () => {
             .map(elem => elem.order)
             .toString();
 
-        if (currentOrder === "ascend") {
-            currentOrder = "descend";
-        } else {
+        if (currentOrder === "descend") {
             currentOrder = "ascend";
+        } else {
+            currentOrder = "descend";
         }
 
-        const compareFnc = (a, b) => {
+        const myData = (a, b) => {
             if (currentOrder === "ascend") {
-                // account for missing values
+
                 if (a[heading] === undefined) {
                     return 1;
                 } else if (b[heading] === undefined) {
                     return -1;
                 }
-                // numerically
+
                 else if (heading === "name") {
                     return a[heading].first.localeCompare(b[heading].first);
                 } else if (heading === "dob") {
@@ -47,7 +48,7 @@ const DataArea = () => {
                     return a[heading].localeCompare(b[heading]);
                 }
             } else {
-                // account for missing values
+
                 if (a[heading] === undefined) {
                     return 1;
                 } else if (b[heading] === undefined) {
@@ -63,7 +64,7 @@ const DataArea = () => {
                 }
             }
         };
-        const sortedUsers = developerState.filteredUsers.sort(compareFnc);
+        const sortedUsers = developerState.filteredUsers.sort(myData);
         const updatedHeadings = developerState.headings.map(elem => {
             elem.order = elem.name === heading ? currentOrder : elem.order;
             return elem;
@@ -80,25 +81,29 @@ const DataArea = () => {
         const filter = event.target.value;
         const filteredList = developerState.users.filter(item => {
             let values = item.name.first.toLowerCase() + " " + item.name.last.toLowerCase();
-            console.log(filter, values)
+            // console.log(filter, values)
             if (values.indexOf(filter.toLowerCase()) !== -1) {
                 return item
             };
         });
 
-        setDeveloperState({ ...developerState, filteredUsers: filteredList });
+        setDeveloperState({
+            ...developerState,
+            filteredUsers: filteredList
+        });
     };
 
     useEffect(() => {
-        API.getUsers().then(results => {
-            console.log(results.data.results);
+        API.getEmployees().then(results => {
+            // console.log(results.data.results);
             setDeveloperState({
                 ...developerState,
                 users: results.data.results,
                 filteredUsers: results.data.results
             });
         });
-    }, []);
+    },
+        []);
 
     return (
         <DataAreaContext.Provider
